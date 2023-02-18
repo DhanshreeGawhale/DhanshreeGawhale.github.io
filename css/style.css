@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -155,10 +157,102 @@ header .nav-logo span {
     .hero .container {
         flex-direction: column-reverse;
         justify-content: flex-start;
-        align-items: flec-start;
+        align-items: flex-start;
         gap: 2rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
 
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.about .content {
+    max-width: 600px;
+    display: grid;
+    gap: 1rem;
+
+}
+
+.about .content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.about .content h2 span {
+    color: purple;
+}
+
+.about .content .btn {
+    margin-top: 1rem;
+
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .about .image {
+        display: none;
+
+    }
+}
+
+.skills .container {
+    display: grid;
+    justify-content: center;
+    align-items: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 5px solid coral;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 1rem;
+
+}
+
+.skills .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.skills .skills-wrapper span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.skills .skills-wrapper i {
+    font-size: 0.5rem;
+
+}
+
+@media screen and (max-width:768px) {
+    .skills .skills-wrapper span {
+        font-size: 1.5rem;
+    }
 }
